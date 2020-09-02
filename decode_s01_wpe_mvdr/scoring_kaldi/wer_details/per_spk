@@ -1,0 +1,5 @@
+SPEAKER         id       #SENT      #WORD       Corr        Sub        Ins        Del        Err      S.Err
+S01_mvdr_ta     raw          1        602        423        118         17         61        196          1
+S01_mvdr_ta     sys          1        602      70.27      19.60       2.82      10.13      32.56     100.00
+SUM             raw          1        602        423        118         17         61        196          1
+SUM             sys          1        602      70.27      19.60       2.82      10.13      32.56     100.00

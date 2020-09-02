@@ -1,0 +1,6 @@
+# compute-wer-bootci --mode=present ark:exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/test_filt.txt ark:exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/penalty_0.0/8.txt > exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/wer_details/wer_bootci 
+# Started at Wed Sep  2 10:28:38 IST 2020
+#
+compute-wer-bootci --mode=present ark:exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/test_filt.txt ark:exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/penalty_0.0/8.txt 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Sep  2 10:28:38 IST 2020, elapsed time 0 seconds

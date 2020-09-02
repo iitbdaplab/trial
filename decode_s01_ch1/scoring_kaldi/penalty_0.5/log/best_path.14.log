@@ -1,0 +1,14 @@
+# lattice-scale --inv-acoustic-scale=14 "ark:gunzip -c exp/chain/tdnn_7b/decode_dev_eval_asr/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/chain/tdnn_7b/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/chain/tdnn_7b/graph/words.txt | cat > exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/penalty_0.5/14.txt 
+# Started at Wed Sep  2 09:18:55 IST 2020
+#
+lattice-best-path --word-symbol-table=exp/chain/tdnn_7b/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=14 'ark:gunzip -c exp/chain/tdnn_7b/decode_dev_eval_asr/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+LOG (lattice-scale[5.5.634~1480-7a50]:main():lattice-scale.cc:107) Done 1 lattices.
+LOG (lattice-add-penalty[5.5.634~1480-7a50]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 1 lattices.
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:99) For utterance S01_ch1, best cost 1993.78 + -8140.55 = -6146.77 over 9504 frames.
+S01_ch1 modern notation makes mathematics much often find abstract and more encrypted than those of natural language where people can often equate a word such as cow with the physical object it corresponds to mathematical symbols are abstract lacking any no meaning outside of mathematics much because common terms such as or and meanings than in everyday speech and other common terms such as open and not sense the term modern physics means up to date physics in this sense a significant portion of so called a more than however nineteen have caused significant paradigm shifts the advent of quantum mechanics at all that incorporates elements of either and both is said to be modern physics is in this latter sense that the term is generally modern physics is often encountered when dealing with extreme conditions quantum mechanical effects tend to appear when dealing with lows low and asia by the way to appear when dealing with highs high will not be for example when analyzing the of a gas at room temperature most phenomena will involve the classical maxwell at all in order gas and the modern on and will find analyzing the modern description at when doing so the result is called the classical all all all your all all your all all us 
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:124) Overall cost per frame is -0.646756 = 0.209783 [graph] + -0.85654 [acoustic] over 9504 frames.
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:128) Done 1 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Wed Sep  2 09:18:56 IST 2020, elapsed time 1 seconds

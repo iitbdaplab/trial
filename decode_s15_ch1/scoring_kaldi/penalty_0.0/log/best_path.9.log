@@ -1,0 +1,14 @@
+# lattice-scale --inv-acoustic-scale=9 "ark:gunzip -c exp/chain/tdnn_7b/decode_dev_eval_asr/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/chain/tdnn_7b/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/chain/tdnn_7b/graph/words.txt | cat > exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/penalty_0.0/9.txt 
+# Started at Wed Sep  2 09:52:46 IST 2020
+#
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=exp/chain/tdnn_7b/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=9 'ark:gunzip -c exp/chain/tdnn_7b/decode_dev_eval_asr/lat.*.gz|' ark:- 
+LOG (lattice-scale[5.5.634~1480-7a50]:main():lattice-scale.cc:107) Done 1 lattices.
+LOG (lattice-add-penalty[5.5.634~1480-7a50]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 1 lattices.
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:99) For utterance S15_ch1, best cost 2172.19 + -15448.1 = -13275.9 over 10530 frames.
+S15_ch1 what about that around for i can you have the if so i can mail you the important documents if not then i can mail you the doc the weekend guide explained in ghouls stuff important docs at my know ok by by the way except for the for this should for courses which were interesting for what about that i am back to ok see if i already got announce meetings and get consultants list working again also stuff for ftp joseph and water carsten curses ground with what other info i have i'll look forward to update ok and i i stuff for all raw up the do you should mark the other two c plus list by the with for way without them on to do no interaction without them on ok lots of stuff for the off guys and keep up especially to joseph for people i think that due for the classes and use as a backup lately due to do without them i am to talk with some and decide for the by look the best thing already got a programmers manual better basis for the do i am back to myself that i think that the best likely to with main honcho trauma gustavo to on that me page nice that due look forward to the comments on the docs i'll for the weekend 
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:124) Overall cost per frame is -1.26077 = 0.206286 [graph] + -1.46706 [acoustic] over 10530 frames.
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:128) Done 1 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Sep  2 09:52:46 IST 2020, elapsed time 0 seconds

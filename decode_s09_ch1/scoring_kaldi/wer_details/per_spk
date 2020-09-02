@@ -1,0 +1,5 @@
+SPEAKER         id       #SENT      #WORD       Corr        Sub        Ins        Del        Err      S.Err
+S09_ch1         raw          1        816        415        163         10        238        411          1
+S09_ch1         sys          1        816      50.86      19.98       1.23      29.17      50.37     100.00
+SUM             raw          1        816        415        163         10        238        411          1
+SUM             sys          1        816      50.86      19.98       1.23      29.17      50.37     100.00

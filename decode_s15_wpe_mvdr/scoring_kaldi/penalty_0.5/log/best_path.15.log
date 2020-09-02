@@ -1,0 +1,14 @@
+# lattice-scale --inv-acoustic-scale=15 "ark:gunzip -c exp/chain/tdnn_7b/decode_dev_eval_asr/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/chain/tdnn_7b/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/chain/tdnn_7b/graph/words.txt | cat > exp/chain/tdnn_7b/decode_dev_eval_asr/scoring_kaldi/penalty_0.5/15.txt 
+# Started at Wed Sep  2 09:48:54 IST 2020
+#
+lattice-best-path --word-symbol-table=exp/chain/tdnn_7b/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=15 'ark:gunzip -c exp/chain/tdnn_7b/decode_dev_eval_asr/lat.*.gz|' ark:- 
+LOG (lattice-scale[5.5.634~1480-7a50]:main():lattice-scale.cc:107) Done 1 lattices.
+LOG (lattice-add-penalty[5.5.634~1480-7a50]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 1 lattices.
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:99) For utterance S15_mvdr_ta, best cost 2709.9 + -8955.81 = -6245.91 over 10530 frames.
+S15_mvdr_ta carsten any of lack of me sturgeons actually i just when can everyone mail me absolutely all documentation www guide and info note on the moo to that's it guide ftp to myself which takes another day to ok i will send you or what about www can you read the mosaic josephs doc carsten curses his predicament much around for to three months on that me raw be ftp you have www if so i can mail you the addresses of the important documents if not then i can mail you the docs themselves guide got a good explained in ghouls stuff important docs at my know me ok list by the way except for the suggestions for courses which were interesting all the maybe back to the list ok let me see if i all the projects straight maybe carsten announce meetings and get consultants list working again global village up programming class the curriculum stuff for ftp water carsten with what other info i have laying around for ok i just stuff you what role lots should mark the other two c plus list by the info i can be found through related newsgroups no interaction without them on ok lots of stuff for off guys keep up the especially to joseph will give i think you for the classes and use as a backup explain problems with need to the with so i will list by already got a programmers should thing better basis for the moo communications back to comment on that to the question on the list and see what consensus emerges main honcho trauma gustavo here or colman a look forward to the comments on the off guys 
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:124) Overall cost per frame is -0.593154 = 0.25735 [graph] + -0.850504 [acoustic] over 10530 frames.
+LOG (lattice-best-path[5.5.634~1480-7a50]:main():lattice-best-path.cc:128) Done 1 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Sep  2 09:48:54 IST 2020, elapsed time 0 seconds

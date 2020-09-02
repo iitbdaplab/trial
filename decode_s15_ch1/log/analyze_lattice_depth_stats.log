@@ -1,0 +1,12 @@
+# gunzip -c exp/chain/tdnn_7b/decode_dev_eval_asr/depth_stats_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp/chain/tdnn_7b/graph 
+# Started at Wed Sep  2 09:52:46 IST 2020
+#
+The total amount of data analyzed assuming 100 frames per second is 0.0 hours
+Overall, lattice depth (10,50,90-percentile)=(8,48,205) and mean=72.7
+Phone sil accounts for 84.4% of frames, with lattice depth (10,50,90-percentile)=(13,49,209) and mean=78.7
+Nonsilence phones as a group account for 15.6% of frames, with lattice depth (10,50,90-percentile)=(2,20,85) and mean=40.1
+Phone uw_E accounts for 1.0% of frames, with lattice depth (10,50,90-percentile)=(6,40,79) and mean=43.4
+Phone ay_S accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(16,43,261) and mean=73.4
+Phone ah_I accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(2,8,40) and mean=18.3
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Sep  2 09:52:46 IST 2020, elapsed time 0 seconds
